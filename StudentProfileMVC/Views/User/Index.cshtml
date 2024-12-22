@@ -1,0 +1,57 @@
+﻿<html>
+    <head>
+        <title>MVC Project</title>
+        <meta charset=utf-8 />
+    </head>
+    <body>
+        <h2>Форма користувача</h2>
+        <form method="post" action="/User/View">
+            <div>
+                <label for="firstname">Ім’я:</label>
+                <input required type="text" minlength="2" maxlength="15" name="firstname" id="firstname" />
+            </div>
+            <div>
+                <label for="lastname">Прізвище:</label>
+                <input required type="text" minlength="2" maxlength="15" name="lastname" id="lastname" />
+            </div>
+            <div>
+                <label for="group">Група:</label>
+                <input required type="text" minlength="5" maxlength="7" name="group" id="group" />
+            </div>
+            <div>
+                <label for="grade1">Оцінка з предмету 1:</label>
+                <input required type="number" min="0" max="12" id="grade1" name="grade1" />
+            </div>
+            <div>
+                <label for="grade2">Оцінка з предмету 2:</label>
+                <input required type="number" min="0" max="12" id="grade2" name="grade2" />
+            </div>
+            <div>
+                <label for="grade3">Оцінка з предмету 3:</label>
+                <input required type="number" min="0" max="12" id="grade3" name="grade3" />
+            </div>
+            <div>
+                <label for="pr-lang">Мови програмування:</label>
+                <div>
+                    <input type="checkbox" name="programmingLanguages" value="C#" id="C#" />
+                    <label for="C#">C#</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="programmingLanguages" value="Java" id="Java" />
+                    <label for="Java">Java</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="programmingLanguages" value="JS" id="JS" />
+                    <label for="JS">JS</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="programmingLanguages" value="Python" id="Python" />
+                    <label for="Python">Python</label>
+                </div>
+            </div>
+            <button type="submit">Надіслати</button>
+            <div>
+        </div>
+        </form>
+</body>
+</html>
